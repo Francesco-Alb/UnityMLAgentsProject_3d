@@ -1,0 +1,23 @@
+cd C:\Users\franc\Documents\programming_projects\unity_course\unity_ml_agents\rl_unity_project\rl_unity_project\Assets
+
+conda activate ml_agents_env_3_9_13
+
+===========================================================
+
+## Train new model with parameters in config
+mlagents-learn config/general_config.yaml --run-id=test_movetogoal_no_graph
+
+## Resume training with old model
+mlagents-learn config\general_config.yaml --initialize-from=test_movetogoal --run-id=test_movetogoal2
+
+## Override
+mlagents-learn move_to_ball_config.yaml --force --initialize-from=test_movetogoal --run-id=test_movetogoal2
+
+tensorboard --logdir results
+
+============================================================
+## Train new model with parameters in config + imitation demo
+mlagents-learn config\general_config.yaml --run-id=movetogoal_imitation1
+
+============================================================
+--width 512 --height 512 --quality-level 0 --time-scale: 20 --no-graphics --num-envs 4 false # Set to true to disable graphics completely
