@@ -24,7 +24,7 @@ public class TargetLogic : MonoBehaviour
     // Method to reset the target (Destroys old and spawns new)
     public void ResetTarget()
     {
-        // **Destroy any existing target instance before spawning a new one**
+        // Destroy any existing target instance before spawning a new one
         if (currentTargetInstance != null)
         {
             Destroy(currentTargetInstance);
@@ -33,7 +33,7 @@ public class TargetLogic : MonoBehaviour
 
     public Vector3 GetTargetPosition()
     {
-        // **Get position of the *current* target instance (environment-specific)**
+        // Get position of the *current* target instance (environment-specific)
         if (currentTargetInstance != null)
         {
             return currentTargetInstance.transform.localPosition; // Access position of the instance we are tracking

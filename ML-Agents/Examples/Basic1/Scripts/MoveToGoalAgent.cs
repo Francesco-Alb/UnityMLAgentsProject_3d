@@ -42,6 +42,9 @@ public class MoveToGoalAgent : Agent {
         Debug.Log(actions.ContinuousActions[0]);
 
         transform.position += new Vector3(moveX, 0, moveZ) * Time.deltaTime * speed;
+
+        // Add a small penalty for each step
+        AddReward(-0.005f);
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
@@ -55,14 +58,14 @@ public class MoveToGoalAgent : Agent {
         if (other.CompareTag("Target"))
         {
             Debug.Log("Target Reached!");
-            SetReward(1f);
+            AddReward(1f);
             floorMeshRenderer.material = winMaterial;
             EndEpisode();
         }
         if (other.CompareTag("Wall"))
         {
             Debug.Log("Collided with a wall!");
-            SetReward(-1f);
+            AddReward(-0.05f);
             floorMeshRenderer.material = loseMaterial;
             EndEpisode();
         }

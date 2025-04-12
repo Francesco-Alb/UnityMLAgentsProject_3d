@@ -99,7 +99,7 @@ public class SphereHuntAgent : Agent
 
         if (other.CompareTag("Wall"))
         {
-            // AddReward(-0.5f); // Punishment for hitting a wall
+            AddReward(-0.005f); // Punishment for hitting a wall
             floorMeshRenderer.material = loseMaterial;
             Debug.Log("Collided with Wall!");
             EndEpisode();
