@@ -1,0 +1,27 @@
+# My RL Projects
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Unity Version](https://img.shields.io/badge/Unity-2022.3.22f1-blue)
+![ML-Agents](https://img.shields.io/badge/ML--Agents-0.30.0-orange)
+![Python Version](https://img.shields.io/badge/python-3.9-blue)
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+
+This repository contains a collection of reinforcement learning environments and agents developed for training and testing simple navigation behaviors.
+
+## Projects
+
+### MoveToGoal
+
+In **MoveToGoal**, the agent is tasked with reaching a reward point in the shortest possible time while avoiding any contact with the environment’s borders. The project focuses on optimizing pathfinding behavior under spatial constraints.
+
+- 📂 [**Go to project folder**](ML-Agents/Examples/MoveToGoal)
+<p align="center">
+  <img src="ML-Agents/Examples/video_and_graphs/movetogoal_blueboy/movetogoal_blueboy_graph.png" alt="MoveToGoal Eval" width="800"/>
+</p>
+
+- 🎥 **Demo:**
+
+<p align="center">
+  <img src="ML-Agents/Examples/video_and_graphs/movetogoal_blueboy/movetogoal_blueboy_gif.gif" alt="MoveToGoal Demo" width="600"/>
+</p>
+
