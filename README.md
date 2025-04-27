@@ -25,3 +25,10 @@ In **MoveToGoal**, the agent is tasked with reaching a reward point in the short
   <img src="ML-Agents/Examples/video_and_graphs/movetogoal_blueboy/movetogoal_blueboy_gif.gif" alt="MoveToGoal Demo" width="600"/>
 </p>
 
+## Credits
+
+The following assets are used in this project.
+
+- [AurynSkyGames Gems Ultimate Pack](GeneralPrefabs/SharedAssets/AurynSky) — Available for free use via the Unity Asset Store.
+
+<!-- Add more assets here in the future -->
