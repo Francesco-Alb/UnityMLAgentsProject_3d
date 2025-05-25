@@ -1,4 +1,4 @@
-# My RL Projects
+# My RL Projects (3D)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Unity Version](https://img.shields.io/badge/Unity-2022.3.22f1-blue)
