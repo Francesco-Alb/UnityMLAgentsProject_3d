@@ -32,3 +32,19 @@ The following assets are used in this project.
 - [AurynSkyGames Gems Ultimate Pack](GeneralPrefabs/SharedAssets/AurynSky) — Available for free use via the Unity Asset Store.
 
 <!-- Add more assets here in the future -->
+
+---
+
+### SphereHunt
+In **SphereHunt**, the agent's objective is to first locate a button and then perform a specific _discrete action_ to press it. Once activated, the goal appears, and the agent must then collect it as quickly as possible. This project emphasizes sequential task completion and efficient navigation within a dynamic environment.
+
+- 📂 [**Go to project folder**](ML-Agents/Examples/SphereHunt)
+<p align="center">
+  <img src="ML-Agents/Examples/video_and_graphs/spherehunt_yellowboy/spherehunt_yellowboy_graph.png" alt="SphereHunt Eval" width="800"/>
+</p>
+
+- 🎥 **Demo:**
+
+<p align="center">
+  <img src="ML-Agents/Examples/video_and_graphs/spherehunt_yellowboy/spherehunt_yellowboy_gif.gif" alt="SphereHunt Demo" width="600"/>
+</p>
