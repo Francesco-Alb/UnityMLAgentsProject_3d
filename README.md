@@ -14,6 +14,13 @@ This repository contains a collection of reinforcement learning environments and
 
 In **MoveToGoal**, the agent is tasked with reaching a reward point in the shortest possible time while avoiding any contact with the environment’s borders. The project focuses on optimizing pathfinding behavior under spatial constraints.
 
+**Reward Mechanics**
+* Positive Reward:
+  * +5: For successfully reaching the target.
+* Negative Reward (Penalties):
+  * -0.0001: A small penalty applied at each step to encourage faster completion.
+  * -0.01: For colliding with a wall (border).
+
 - 📂 [**Go to project folder**](ML-Agents/Examples/MoveToGoal)
 <p align="center">
   <img src="ML-Agents/Examples/video_and_graphs/movetogoal_blueboy/movetogoal_blueboy_graph.png" alt="MoveToGoal Eval" width="800"/>
@@ -37,6 +44,14 @@ The following assets are used in this project.
 
 ### SphereHunt
 In **SphereHunt**, the agent's objective is to first locate a button and then perform a specific _discrete action_ to press it. Once activated, the goal appears, and the agent must then collect it as quickly as possible. This project emphasizes sequential task completion and efficient navigation within a dynamic environment.
+
+**Reward Mechanics**
+* Positive Reward:
+  * +2: For successfully pressing the button.
+  * +10: For collecting the spawned goal.
+* Negative Reward (Penalties):
+  * -0.0001: A small penalty applied at each step to encourage faster completion.
+  * -0.01: For colliding with a wall (border).
 
 - 📂 [**Go to project folder**](ML-Agents/Examples/SphereHunt)
 <p align="center">
