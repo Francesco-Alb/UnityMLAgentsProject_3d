@@ -72,6 +72,9 @@ public class SphereHuntAgent : Agent
             buttonLogic.PressButton();
             AddReward(2f); // Reward for pressing the button
         }
+
+        // Add a small penalty for each step
+        AddReward(-0.0001f);
     }
 
     // Heuristic function for manual testing
@@ -99,7 +102,7 @@ public class SphereHuntAgent : Agent
 
         if (other.CompareTag("Wall"))
         {
-            AddReward(-0.005f); // Punishment for hitting a wall
+            AddReward(-0.01f); // Punishment for hitting a wall
             floorMeshRenderer.material = loseMaterial;
             Debug.Log("Collided with Wall!");
             EndEpisode();

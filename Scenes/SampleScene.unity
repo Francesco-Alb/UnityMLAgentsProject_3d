@@ -362,8 +362,12 @@ PrefabInstance:
       value: Env_SphereHunt
       objectReference: {fileID: 0}
     - target: {fileID: 5311909193420741633, guid: 208b373c136ac1547a9c731eb5800e43, type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: 2394764c521cf0f438c1b37bf8b794e3, type: 3}
+    - target: {fileID: 5311909193420741633, guid: 208b373c136ac1547a9c731eb5800e43, type: 3}
       propertyPath: m_BehaviorType
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
